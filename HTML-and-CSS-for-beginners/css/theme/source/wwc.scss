@@ -1,0 +1,78 @@
+/**
+ * Women Who Code theme for reveal.js. Based on reveal.js 'White' theme.
+ *
+ * By Denise Neves Santos
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 32px;
+$mainFont: 'Lucida Grande', 'Tahoma', 'Verdana', 'Arial', sans-serif;
+$headingFont: 'Lucida Grande', 'Tahoma', 'Verdana', 'Arial', sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: rgb(0, 122, 124);
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.8em;
+$heading2Size: 2em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Template overrides
+.reveal {
+  section {
+    img {
+      border: none;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.55);
+
+      &.no-shadow {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+
+  //intro slide
+  .intro {
+    img {
+      margin: -40px auto 40px;
+    }
+  }
+
+  .long-list {
+    column-width: 10rem;
+    list-style-position: inside;
+    list-style-type: disc;
+    width: 100%;
+    font-size: .6rem;
+  }
+}
+

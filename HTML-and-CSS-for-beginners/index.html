@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>WWC - HTML</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/wwc.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section class="intro">
+					<img src="lib/images/women-who-code.jpeg" alt="Women Who Code" width="200" class="no-shadow"/>
+					<h2>HTML + CSS For Beginners</h2>
+					<h3>Tech(K)Now Day @ CodeNode</h3>
+					<p>By <a href="https://github.com/denisensantos">Denise Neves Santos</a></p>
+					<p><small>London UK, 8th of March, 2017</small></p>
+				</section>
+
+				<section id="agenda">
+					<h2>Agenda</h2>
+					<ul>
+						<li>What is Web Development?</li>
+						<li>Getting started</li>
+						<li>Creating a project</li>
+						<li>Introduction to:
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Images</li>
+								<li>Typography</li>
+								<li>Navigation</li>
+							</ul>
+						</li>
+						<li>Q&A</li>
+					</ul>
+				</section>
+
+				<section id="what-is-web-development">
+					<h2>What is Web Development?</h2>
+					<ul>
+						<li>The term Web Development refer to tasks associated with the building of websites</li>
+						<li>Websites are hosted via intranet or internet</li>
+						<li>Web development process includes User Experience (UX) Design, Visual Design, Server-side coding, Client-side coding, Network configuration...</li>
+					</ul>
+				</section>
+
+				<section>
+					<section id="getting-started">
+						<h2>Getting started</h2>
+						<h3>What will I need?</h3>
+						<ul>
+							<li>Computer</li>
+							<li>Internet connection</li>
+							<li>Web browser (Google Chrome)</li>
+							<li>Text editor*</li>
+						</ul>
+
+						<p class="fragment"><em>*<strong>Any</strong> code programming language can be read in <strong>any</strong> text editor, such as <a href="https://atom.io/" target="_blank">Atom</a> or <a href="https://www.sublimetext.com/" target="_blank">Sublime</a></em></p>
+					</section>
+					<section id="wi-fi-details">
+						<h2>Network details</h2>
+						<p><strong>Network name:</strong> CodeNode</p>
+						<p><strong>Password:</strong> welovecode</p>
+					</section>
+				</section>
+
+				<section id="creating-a-project">
+
+					<section id="thimble-by-mozilla">
+						<h2>Creating a project</h2>
+						<p>In this workshop, we will be using an online tool called <strong>THIMBLE</strong>, developed by Mozilla</p>
+						<h4><a href="https://thimble.mozilla.org/en-US/" target="_blank">https://thimble.mozilla.org/en-US/</a></h4>
+						<p>(google: <strong>thimble by mozilla</strong>)</p>
+					</section>
+					<section id="thimble-home">
+						<small>CREATING A PROJECT</small>
+						<h2>THIMBLE</h2>
+						<img src="lib/images/thimble-home.png"/>
+					</section>
+					<section id="thimble-index">
+						<small>CREATING A PROJECT</small>
+						<h2>Thimble editor</h2>
+						<img src="lib/images/thimble-index.png"/>
+					</section>
+					<section id="project-structure">
+						<small>CREATING A PROJECT</small>
+						<h2>File structure</h2>
+						<img class="no-shadow" src="lib/images/file-structure.png"/>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Introduction to HTML</h2>
+						<h4>(HYPERTEXT MARK-UP LANGUAGE)</h4>
+						<ul>
+							<li>HTML is a mark-up language, providing structure to the document</li>
+							<li>It is written in the form of HTML elements</li>
+							<li>Each element is composed of tags enclosed in angle brackets, and everything inbetween</li>
+						</ul>
+						<pre><code class="html"><p>This is a paragraph element</p></code></pre>
+					</section>
+					<section>
+						<small>INTRODUCTION TO HTML</small>
+						<h2>Document type element (doctype)</h2>
+						<ul>
+							<li>Is very first element in an HTML document</li>
+							<li>It let the web browser know about what version of the markup language the page is written in</li>
+							<li>In HTML5 we use the following doctype declaration:</li>
+						</ul>
+						<pre><code class="html">&lt;!DOCTYPE html></code></pre>
+					</section>
+					<section>
+						<small>INTRODUCTION TO HTML</small>
+						<h2>Document structure</h2>
+						<p>All HTML pages are composed of two main parts:</p>
+						<ul style="list-style: none;">
+							<li>&lt;head&gt;</li>
+							<li>&lt;body&gt;</li>
+						</ul>
+					</section>
+
+					<section>
+						<small>INTRODUCTION TO HTML</small>
+						<h2>&lt;head&gt;</h2>
+						<ul>
+							<li>Provides information about the page, such as page title and metadata</li>
+							<li>Contains links to externals files (stylesheets)</li>
+						</ul>
+					</section>
+
+					<section>
+						<small>INTRODUCTION TO HTML</small>
+						<h2>&lt;body&gt;</h2>
+
+						<ul>
+							<li>Represents the content of the page</li>
+							<li>You can only have one page &lt;body&gt;</li>
+						</ul>
+					</section>
+					<section>
+						<small>INTRODUCTION TO HTML</small>
+						<h2>Basic HTML Template</h2>
+						<small><code>file: index.html</code></small>
+						<pre><code class="html">&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Made with Thimble</title>
+  &lt;link rel="stylesheet" href="style.css">
+&lt;/head>
+&lt;body>
+  <h1>Welcome to Thimble</h1>
+  <p>Make something <strong>amazing</strong> with the web!</p>
+&lt;/body>
+&lt;/html></code></pre>
+					</section>
+
+					<section id="html-tags">
+						<small>INTRODUCTION TO HTML</small>
+						<h2>HTML Tags</h2>
+						<ul class="long-list">
+							<li><code>&lt;address&gt;</code></li>
+							<li><code>&lt;article&gt;</code></li>
+							<li><code>&lt;footer&gt;</code></li>
+							<li><code>&lt;header&gt;</code></li>
+							<li><code>&lt;h1&gt;</code></li>
+							<li><code>&lt;h2&gt;</code></li>
+							<li><code>&lt;h3&gt;</code></li>
+							<li><code>&lt;h4&gt;</code></li>
+							<li><code>&lt;h5&gt;</code></li>
+							<li><code>&lt;h6&gt;</code></li>
+							<li><code>&lt;hgroup&gt;</code></li>
+							<li><code>&lt;nav&gt;</code></li>
+							<li><code>&lt;section&gt;</code></li>
+							<li><code>&lt;dd&gt;</code></li>
+							<li><code>&lt;div&gt;</code></li>
+							<li><code>&lt;dl&gt;</code></li>
+							<li><code>&lt;dt&gt;</code></li>
+							<li><code>&lt;figcaption&gt;</code></li>
+							<li><code>&lt;figure&gt;</code></li>
+							<li><code>&lt;hr&gt;</code></li>
+							<li><code>&lt;li&gt;</code></li>
+							<li><code>&lt;main&gt;</code></li>
+							<li><code>&lt;ol&gt;</code></li>
+							<li><code>&lt;p&gt;</code></li>
+							<li><code>&lt;pre&gt;</code></li>
+							<li><code>&lt;ul&gt;</code></li>
+							<li><code>&lt;caption&gt;</code></li>
+							<li><code>&lt;col&gt;</code></li>
+							<li><code>&lt;colgroup&gt;</code></li>
+							<li><code>&lt;table&gt;</code></li>
+							<li><code>&lt;tbody&gt;</code></li>
+							<li><code>&lt;td&gt;</code></li>
+							<li><code>&lt;tfoot&gt;</code></li>
+							<li><code>&lt;th&gt;</code></li>
+							<li><code>&lt;thead&gt;</code></li>
+							<li><code>&lt;tr&gt;</code></li>
+							<li><code>&lt;button&gt;</code></li>
+							<li><code>&lt;datalist&gt;</code></li>
+							<li><code>&lt;fieldset&gt;</code></li>
+							<li><code>&lt;form&gt;</code></li>
+							<li><code>&lt;input&gt;</code></li>
+							<li><code>&lt;keygen&gt;</code></li>
+							<li><code>&lt;label&gt;</code></li>
+							<li><code>&lt;legend&gt;</code></li>
+							<li><code>&lt;meter&gt;</code></li>
+							<li><code>&lt;optgroup&gt;</code></li>
+							<li><code>&lt;option&gt;</code></li>
+							<li><code>&lt;output&gt;</code></li>
+							<li><code>&lt;progress&gt;</code></li>
+							<li><code>&lt;select&gt;</code></li>
+							<li><code>&lt;details&gt;</code></li>
+							<li><code>&lt;dialog&gt;</code></li>
+							<li><code>&lt;menu&gt;</code></li>
+							<li><code>&lt;menuitem&gt;</code></li>
+							<li><code>&lt;summary&gt;</code></li>
+							<li><code>&lt;abbr&gt;</code></li>
+							<li><code>&lt;b&gt;</code></li>
+							<li><code>&lt;bdi&gt;</code></li>
+							<li><code>&lt;bdo&gt;</code></li>
+							<li><code>&lt;br&gt;</code></li>
+							<li><code>&lt;cite&gt;</code></li>
+							<li><code>&lt;code&gt;</code></li>
+							<li><code>&lt;data&gt;</code></li>
+							<li><code>&lt;dfn&gt;</code></li>
+							<li><code>&lt;em&gt;</code></li>
+							<li><code>&lt;i&gt;</code></li>
+							<li><code>&lt;kbd&gt;</code></li>
+							<li><code>&lt;mark&gt;</code></li>
+							<li><code>&lt;q&gt;</code></li>
+							<li><code>&lt;rp&gt;</code></li>
+							<li><code>&lt;rt&gt;</code></li>
+							<li><code>&lt;rtc&gt;</code></li>
+							<li><code>&lt;ruby&gt;</code></li>
+							<li><code>&lt;s&gt;</code></li>
+							<li><code>&lt;samp&gt;</code></li>
+							<li><code>&lt;small&gt;</code></li>
+							<li><code>&lt;span&gt;</code></li>
+							<li><code>&lt;strong&gt;</code></li>
+							<li><code>&lt;sub&gt;</code></li>
+							<li><code>&lt;sup&gt;</code></li>
+							<li><code>&lt;time&gt;</code></li>
+							<li><code>&lt;u&gt;</code></li>
+							<li><code>&lt;var&gt;</code></li>
+							<li><code>&lt;wbr&gt;</code></li>
+							<li><code>&lt;area&gt;</code></li>
+							<li><code>&lt;audio&gt;</code></li>
+							<li><code>&lt;map&gt;</code></li>
+							<li><code>&lt;track&gt;</code></li>
+							<li><code>&lt;video&gt;</code></li>
+							<li><code>&lt;embed&gt;</code></li>
+							<li><code>&lt;object&gt;</code></li>
+							<li><code>&lt;param&gt;</code></li>
+							<li><code>&lt;source&gt;</code></li>
+							<li><code>&lt;canvas&gt;</code></li>
+							<li><code>&lt;noscript&gt;</code></li>
+							<li><code>&lt;script&gt;</code></li>
+							<li><code>&lt;del&gt;</code></li>
+							<li><code>&lt;ins&gt;</code></li>
+						</ul>
+						<p class="small"><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element" target="_blank">https://developer.mozilla.org/en/docs/Web/HTML/Element</a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Introduction to CSS</h2>
+						<h4>(Cascading Stylesheets)</h4>
+						<ul>
+							<li>CSS is independent from HTML</li>
+							<li>CSS is responsible for the look and feel of a document</li>
+							<li>Enables you to change the presentation of elements, such as colors, layout and fonts</li>
+							<li>Allows you to style for different screen sizes and devices</li>
+						</ul>
+					</section>
+					<section>
+						<small>INTRODUCTION TO CSS</small>
+						<h2>Basic syntax</h2>
+						<p>The CSS declaration has the following format:</p>
+						<pre><code class="css">selector {
+  property: value;
+}</code></pre>
+						<ul>
+							<li>Selector: HTML tag to which the property apply</li>
+							<li>Property: The property that will be defined</li>
+							<li>Value: The value of the property</li>
+						</ul>
+					</section>
+					<section>
+						<small>INTRODUCTION TO CSS</small>
+						<h2>Basic syntax example</h2>
+						<small><code>file: style.css</code></small>
+						<pre><code class="css">body {
+  background-color: lightblue;
+}</code></pre>
+						<ul>
+							<li>body = selector</li>
+							<li>background-color = property</li>
+							<li>lightblue = value</li>
+						</ul>
+					</section>
+					<section>
+						<small>INTRODUCTION TO CSS</small>
+						<h2>Styling your elements</h2>
+						<small><code>file: style.css</code></small>
+						<pre><code class="css">h1 {
+  background-color: red;
+  color: grey;
+  margin-top: 40px;
+  text-align: center;
+}</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section id="images">
+						<h2>Images</h2>
+						<p>There are two main types of images:</p>
+						<ul>
+							<li><strong>Furniture images:</strong> are the images necessary for the rendering of layout or component</li>
+							<li><strong>Content images:</strong> are the images used to complement and cotextualise your content</li>
+						</ul>
+					</section>
+					<section id="furniture-images">
+						<small>IMAGES</small>
+						<h2>Furniture images</h2>
+						<ul>
+							<li>Are content-agnostic</li>
+							<li>Can be shared amongst components</li>
+							<li>Normally are declared in the stylesheet for greater reusability</li>
+							<li>Examples: background images, navigation arrows, close icons, etc</li>
+						</ul>
+					</section>
+					<section id="adding-furniture-images">
+						<small>IMAGES</small>
+						<h2>Adding furniture images</h2>
+						<small><code>file: style.css</code></small>
+						<pre><code class="css">body {
+  font-family: "Open Sans", sans-serif;
+
+  background-image: url('https://tinyurl.com/jnm5v38');
+  background-position: top left;
+  background-repeat: repeat;
+  color: white;
+}</code></pre>
+						<small>Image credit &copy; <a href="https://www.flickr.com/photos/qubodup/" target="_blank">Iwan Gabovitch</a></small>
+					</section>
+					<section>
+						<small>IMAGES</small>
+						<h2>Content images</h2>
+						<ul>
+							<li>Content images are added within the context of the page (HTML file)</li>
+							<li>&lt;IMG&gt; element source (src): image path, which can be local or external</li>
+							<li>&lt;ALT&gt; attribute: is shown <strong>instead</strong> of the image, if the image cannot be displayed. The alt attribute also describes the image for screen readers</li>
+							<li>&lt;TITLE&gt; attribute: is shown <strong>alongside</strong> the image, as a tooltip</li>
+						</ul>
+					</section>
+					<section>
+						<small>IMAGES</small>
+						<h2>Adding content images</h2>
+						<small><code>file: index.html</code></small>
+						<pre><code class="html">&lt;img src="https://c1.staticflickr.com/8/7496/15997048851_230a7f9ce4_m.jpg"
+	alt="Lovely kitten picture" title="Lovery kitten" /></code></pre>
+						<small>Image credit &copy; <a href="https://www.flickr.com/photos/29638108@N06/" target="_blank">Jennifer C.</a></small>
+					</section>
+					<section>
+						<small>IMAGES</small>
+						<h2>Styling content images</h2>
+						<small><code>file: style.css</code></small>
+						<pre><code class="css">img {
+  border-radius: 10px;
+  width: 100px;
+}</code></pre>
+					</section>
+				</section>
+
+
+				<section>
+					<section id="typography">
+						<h2>Typography</h2>
+						<p>Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed</p>
+					</section>
+					<section id="web-safe-fonts">
+						<small>TYPOGRAPHY</small>
+						<h2>Web safe fonts</h2>
+						<p>Are fonts likely to be pre-installed in a wide range of computers and devices, for example:</p>
+						<p><span style="font-family: Arial;">Arial</span> | <span style="font-family: Times New Roman;">Times New Roman</span> | <span style="font-family: Verdana;">Verdana</span><br>
+							<span style="font-family: Courier New;">Courier New</span> | <span style="font-family: Tahoma;">Tahoma</span> | <span style="font-family: Palatino;">Palatino</span></p>
+						<p>For a complete list of web safe fonts, please access <a href="http://www.cssfontstack.com/" target="_blank">http://www.cssfontstack.com/</a></p>
+					</section>
+					<section id="changing-fonts">
+						<small>TYPOGRAPHY</small>
+						<h2>Changing fonts</h2>
+						<small><code>file: style.css</code></small>
+						<pre><code class="css">p {
+  font-family: Palatino;
+  font-size: 20px;
+  line-height: 1.5em;
+}</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Navigation</h2>
+						<ul>
+							<li>A website is normally composed of many different pages or many sections within the same page</li>
+							<li>Navigation will allow the user to navigate documents</li>
+							<li><code>&lt;nav&gt;</code> element represents a session that will link to another doduments or sections within the same document</li>
+							<li><code>&lt;ul&gt;</code> element represents an unordered list of items</li>
+							<li><code>&lt;a&gt;</code> element (anchor tag) defines an hyperlink</li>
+						</ul>
+					</section>
+					<section>
+						<small>NAVIGATION</small>
+						<h2>Adding navigation</h2>
+						<small><code>file: index.html</code></small>
+						<pre><code class="html">  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About us</a></li>
+    </ul>
+  </nav>
+</code></pre>
+					</section>
+				</section>
+
+				<section id="happy-coding">
+					<h1>Happy coding!</h1>
+				</section>
+
+				<section id="questions">
+					<h2>Questions?</h2>
+				</section>
+
+				<section id="further-learning">
+					<h2>Further learning</h2>
+					<ul>
+						<li><a href="bit.ly/wwclondon">Women Who Code workshops</a> &ndash; for workshops</li>
+						<li><a href="https://www.codecademy.com/learn/all" target="_blank">Code academy</a> &ndash; for online courses</li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">Mozilla Developer Network</a> &ndash; for syntax reference</li>
+						<li><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a> &ndash; for any questions</li>
+					</ul>
+				</section>
+
+				<section id="thank-you">
+					<h2>Thank you</h2>
+					<img src="lib/images/orly-googling-error-messages.jpg" width="300"/>
+				</section>
+
+				<!-- Topics for the intermediate session: -->
+				<!-- UX design -->
+				<!-- HTML Rendering: top to bottom -->
+				<!-- Responsiveness and Media queries -->
+				<!-- Custom fonts -->
+				<!-- Structuring a website -->
+				<!-- Hosting your website -->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
